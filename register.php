@@ -104,7 +104,29 @@ if(isset($_POST['register_button'])){
         array_push($error_array, "Your password must be between 5 and 30 characters<br>");
     }
 
+    if(empty($error_array)) {
+        $password = md5($password); //encrypt password before sending to database
+
+        //generete username
+        $username = strtolower($fname . "_" . $lname);
+        $check_username_query = mysqli_query($con,"SELECT username FROM users WHERE username='$username'");
+
+        $i = 0;
+        //if username exist add number to username
+        while(mysqli_num_rows($check_username_query) != 0) {
+            $i++;
+            $username = $username . "_" . $i;
+            $check_username_query = mysqli_query($con,"SELECT username FROM users WHERE username='$username'");
     }
+
+    //profile picture assignment
+    $profile
+
+
+
+
+    }
+}
 }
 ?>
 
