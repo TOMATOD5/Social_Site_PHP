@@ -1,22 +1,13 @@
-<?php
-
-$con = mysqli_connect("localhost", "root", "", "social");
-
-if(mysqli_connect_errno())
-{
-    echo "Failed to connect". mysqli_connect_errno();
-}
+<?php  
+require 'config/config.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friendfinder</title>
+	<title>Welcome to Swirlfeed</title>
 </head>
 <body>
-    <p>Hi!</p>
+	Hello Reece!!!!!
 </body>
 </html>
