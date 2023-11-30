@@ -4,7 +4,6 @@ require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
 ?>
 
-
 <html>
 <head>
 	<title>Welcome to Swirlfeed!</title>
@@ -36,8 +35,6 @@ require 'includes/form_handlers/login_handler.php';
 		<?php if(in_array("Your first name must be between 2 and 25 characters<br>", $error_array)) echo "Your first name must be between 2 and 25 characters<br>"; ?>
 		
 		
-
-
 		<input type="text" name="reg_lname" placeholder="Last Name" value="<?php 
 		if(isset($_SESSION['reg_lname'])) {
 			echo $_SESSION['reg_lname'];
@@ -79,7 +76,6 @@ require 'includes/form_handlers/login_handler.php';
 		<?php if(in_array("<span style='color: #14C800;'>You're all set! Goahead and login!</span><br>", $error_array)) echo "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>"; ?>
 
 	</form>
-
 
 </body>
 </html>
