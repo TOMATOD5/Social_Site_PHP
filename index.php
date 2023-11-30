@@ -1,13 +1,12 @@
 <?php  
 require 'config/config.php';
-
 ?>
 
 <html>
 <head>
-	<title>Welcome to Swirlfeed</title>
+	<title>Welcome to Social!</title>
 </head>
 <body>
-	Hello Reece!!!!!
+	<h1>TEST?!</h1>
 </body>
 </html>

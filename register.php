@@ -6,7 +6,7 @@ require 'includes/form_handlers/login_handler.php';
 
 <html>
 <head>
-	<title>Welcome to Swirlfeed!</title>
+	<title>Welcome to Social!</title>
 </head>
 <body>
 
