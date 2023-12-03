@@ -1,4 +1,4 @@
-<?php
+ <?php
 //Declaring variables to prevent errors
 $fname = ""; //First name
 $lname = ""; //Last name
