@@ -13,6 +13,14 @@ require 'includes/form_handlers/login_handler.php';
 
 	<div class="wrapper">
 		<div class="login_box">
+
+			<div class="login_header">
+				<h1>Social!</h1>
+				<p>Login or sign up below.</p>
+
+
+			</div>
+
 			<form action="register.php" method="POST">
 				<input type="email" name="log_email" placeholder="Email Address" value="<?php 
 				if(isset($_SESSION['log_email'])) {
