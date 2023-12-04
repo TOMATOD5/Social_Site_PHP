@@ -7,7 +7,7 @@ require 'includes/form_handlers/login_handler.php';
 
 <html>
 <head>
-	<title>Welcome to Swirlfeed!</title>
+	<title>Welcome to Social!</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="assets/js/register.js"></script>
@@ -38,7 +38,7 @@ require 'includes/form_handlers/login_handler.php';
 		<div class="login_box">
 
 			<div class="login_header">
-				<h1>Swirlfeed!</h1>
+				<h1>Social!</h1>
 				Login or sign up below!
 			</div>
 			<br>
