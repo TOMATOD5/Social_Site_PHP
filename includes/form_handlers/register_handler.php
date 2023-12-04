@@ -1,4 +1,4 @@
- <?php
+<?php
 //Declaring variables to prevent errors
 $fname = ""; //First name
 $lname = ""; //Last name
@@ -100,12 +100,17 @@ if(isset($_POST['register_button'])){
 
 
 		$i = 0; 
-		//if username exists add number to username
-		while(mysqli_num_rows($check_username_query) != 0) {
-			$i++; //Add 1 to i
-			$username = $username . "_" . $i;
-			$check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
-		}
+		$temp_username = $username; //Temporary username variable used to find unique username
+ 
+		//If username already exists, add number to end and check again
+		 while(mysqli_num_rows($check_username_query) != 0){
+			 $temp_username = $username; //Reset temporary username back to original username
+			 $i++;
+			 $temp_username = $username."_".$i;
+			 $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$temp_username'");
+		 }
+		 
+		 $username = $temp_username; //$temp_username will now contain the unique username
 
 		//Profile picture assignment
 		$rand = rand(1, 2); //Random number between 1 and 2
@@ -116,9 +121,9 @@ if(isset($_POST['register_button'])){
 			$profile_pic = "assets/images/profile_pics/defaults/head_emerald.png";
 
 
-		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
-
-		array_push($error_array, "<span style='color: #14C800;'>You're all set! Goahead and login!</span><br>");
+		$query = mysqli_query($con, "INSERT INTO users VALUES (NULL, '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
+		
+		array_push($error_array, "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>");
 
 		//Clear session variables 
 		$_SESSION['reg_fname'] = "";
