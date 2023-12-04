@@ -1,12 +1,7 @@
 <?php  
-require 'config/config.php';
+include("includes/form_handlers/header.php");
 ?>
 
-<html>
-<head>
-	<title>Welcome to Social!</title>
-</head>
-<body>
 	<h1>TEST?!</h1>
 </body>
 </html>
