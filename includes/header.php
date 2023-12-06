@@ -18,6 +18,7 @@ else {
 ?>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<title>Welcome to Social!</title>
 
 	<!-- Javascript -->
