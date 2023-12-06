@@ -15,25 +15,25 @@ if(isset($_POST['register_button'])){
 
 	//First name
 	$fname = strip_tags($_POST['reg_fname']); //Remove html tags
-	$fname = str_replace(' ', '', $fname); //remove spaces
-	$fname = ucfirst(strtolower($fname)); //Uppercase first letter
+	$fname = str_replace(' ', '', $fname); //Remove white spaces
+	$fname = ucfirst(strtolower($fname)); //Set uppercase first letter
 	$_SESSION['reg_fname'] = $fname; //Stores first name into session variable
 
 	//Last name
 	$lname = strip_tags($_POST['reg_lname']); //Remove html tags
-	$lname = str_replace(' ', '', $lname); //remove spaces
+	$lname = str_replace(' ', '', $lname); //Remove white spaces
 	$lname = ucfirst(strtolower($lname)); //Uppercase first letter
 	$_SESSION['reg_lname'] = $lname; //Stores last name into session variable
 
 	//email
 	$em = strip_tags($_POST['reg_email']); //Remove html tags
-	$em = str_replace(' ', '', $em); //remove spaces
+	$em = str_replace(' ', '', $em); //Remove white spaces
 	$em = ucfirst(strtolower($em)); //Uppercase first letter
 	$_SESSION['reg_email'] = $em; //Stores email into session variable
 
 	//email 2
 	$em2 = strip_tags($_POST['reg_email2']); //Remove html tags
-	$em2 = str_replace(' ', '', $em2); //remove spaces
+	$em2 = str_replace(' ', '', $em2); //Remove white spaces
 	$em2 = ucfirst(strtolower($em2)); //Uppercase first letter
 	$_SESSION['reg_email2'] = $em2; //Stores email2 into session variable
 
@@ -88,9 +88,7 @@ if(isset($_POST['register_button'])){
 		}
 	}
 
-
-
-
+	
 	if(empty($error_array)) {
 		$password = md5($password); //Encrypt password before sending to database
 

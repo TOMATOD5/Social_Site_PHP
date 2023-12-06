@@ -56,6 +56,8 @@ if(isset($_POST['post_message'])) {
 
  ?>
 
+  <!-- CSS style -->
+
  	<style type="text/css">
 	 	.wrapper {
 	 		margin-left: 0px;
