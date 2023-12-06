@@ -1,6 +1,6 @@
 <?php
 
-include("includes/header.php");
+include("includes/header.php"); //Header
 
 if(isset($_GET['q'])) {
 	$query = $_GET['q'];

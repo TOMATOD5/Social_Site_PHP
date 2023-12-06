@@ -1,6 +1,6 @@
 <?php 
-include("includes/header.php");
-include("includes/form_handlers/settings_handler.php");
+include("includes/header.php"); //Header
+include("includes/form_handlers/settings_handler.php"); //Handler
 ?>
 
 <div class="main_column column">
