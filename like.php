@@ -5,6 +5,8 @@
 </head>
 <body>
 
+	<!-- CSS style -->
+
 	<style type="text/css">
 	* {
 		font-family: Arial, Helvetica, Sans-serif;
@@ -49,7 +51,7 @@
 	$row = mysqli_fetch_array($user_details_query);
 	$total_user_likes = $row['num_likes'];
 
-	//Like button
+	//Like button 
 	if(isset($_POST['like_button'])) {
 		$total_likes++;
 		$query = mysqli_query($con, "UPDATE posts SET likes='$total_likes' WHERE id='$post_id'");
@@ -97,9 +99,6 @@
 
 
 	?>
-
-
-
 
 </body>
 </html>
