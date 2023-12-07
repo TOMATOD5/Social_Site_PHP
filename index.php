@@ -1,5 +1,5 @@
 <?php 
-include("includes/header.php");
+include("includes/header.php"); //header (navbar, etc.)
 
 if(isset($_POST['post'])){
 

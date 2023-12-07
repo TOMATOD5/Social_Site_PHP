@@ -23,7 +23,7 @@
 	</style>
 
 	<?php  
-	require 'config/config.php';
+	require 'config/config.php'; //DB connection
 	include("includes/classes/User.php");
 	include("includes/classes/Post.php");
 	include("includes/classes/Notification.php");

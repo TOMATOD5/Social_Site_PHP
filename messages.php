@@ -1,5 +1,5 @@
 <?php 
-include("includes/header.php");
+include("includes/header.php"); //header (navbar, etc.)
 
 $message_obj = new Message($con, $userLoggedIn);
 
