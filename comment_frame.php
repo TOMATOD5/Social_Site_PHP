@@ -120,6 +120,7 @@
 					$time_message = $interval->y . " years ago"; //1+ year ago
 			}
 			else if ($interval->m >= 1) {
+				
 				if($interval->d == 0) {
 					$days = " ago";
 				}
