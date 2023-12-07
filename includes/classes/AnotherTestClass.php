@@ -1,3 +1,6 @@
+<!-- test class, nothing interesting here... -->
+
+
 <?php
 class AnotherTestClass {
 
