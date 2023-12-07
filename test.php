@@ -5,7 +5,7 @@ include("includes/classes/AnotherTestClass.php");
 $t = new TestClass();
 $t->test();
 
-//hello();
+//hello(); 
 ?>
 
 
