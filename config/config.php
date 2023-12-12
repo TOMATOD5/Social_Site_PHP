@@ -2,7 +2,7 @@
 ob_start(); //Turns on output buffering 
 session_start();
 
-$timezone = date_default_timezone_set("Europe/London"); //Timezone
+$timezone = date_default_timezone_set("Europe/London"); //Timezone EU
 
 $con = mysqli_connect("localhost", "root", "", "social"); //Connection variable
 
